@@ -24,8 +24,8 @@
     },
     "plugins": [
         "react",
-        "react-hooks",
         "@typescript-eslint",
+        "react-hooks",
         "prettier"
     ],
     "rules": {
@@ -34,6 +34,12 @@
         "react-hooks/exhaustive-deps":"warn",
         "react/jsx-filename-extension":[1,{"extensions":[".tsx"]}],
         "import/prefere-default-export":"off",
+        "@typescript-eslint/explicit-function-return-type":[
+            "error",
+            {
+                "allowExpression":true
+            }
+        ],
         "import/extensions":[
             "error",
             "ignorePackages",
